@@ -1,0 +1,1453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="images/shortcut-icon.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+<!--popup Modal -->
+<div class="modal modal-xl fade" id="notice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Special Offer</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/slider/5.jpg" alt="image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!--popup modal ends -->
+
+
+    <header>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="contact-header">
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i> <a href="tel:9779800000000">+977-9800000000</a>
+                </div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i> <a href="mailto:ankitbc777@gmail.com">ankitbc777@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 text-end">
+              <div class="login-header">
+                <i class="fa-solid fa-user"></i> 
+                <a href="login.html">Login</a> |
+                <a href="#">Register</a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a href="index.html" class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="images/mobile-menu-logo.png" alt="mobile-menu-logo">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <button> Book a Table </button>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="slider">
+       <div class="container-fluid">
+        <!-- <div class="container">  -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel main-slider owl-theme">
+                <div class="item">
+                  <img src="images/slider/1.jpg" alt="banner">
+                </div>
+                <div class="item">
+                  <img src="images/slider/2.jpg" alt="banner">
+                </div>
+                <div class="item">
+                  <img src="images/slider/3.jpg" alt="banner">
+                </div>
+                <div class="item">
+                  <img src="images/slider/4.jpg" alt="banner">
+                </div>
+                <div class="item">
+                  <img src="images/slider/5.jpg" alt="banner">
+                </div>
+                <div class="item">
+                  <img src="images/slider/6.jpg" alt="banner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+    <section class="todays-special-menu">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="todays-special-title">
+                <h1>Today's Special</h1>
+                <div class="order-button">
+                </div>
+                <div class="order-button-override">
+                  <a href="#">Order Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="special-thumbnail">
+              <img src="images/kfc-style-chicken.jpg" alt="kfc-style-chicken" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- special menu start -->
+     <section class="special-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            <h1>Special Menu</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="owl-carousel special-menu-slider owl-theme wow animate__animated animate__slideInRight">
+            <div class="item">
+              <div class="menu-card">
+                <div class="menu-card-figure">
+                  <a href="#">
+                    <img src="images/chilli chicken.png" alt="Chilli Chicken" class="img-fluid" >
+                  </a>
+                </div>
+                <div class="menu-card-title">
+                  <div class="menu-title">
+                    <h2><a href="#"> Chilli Chicken Punjabi style by Nepali Chef</a></h2>
+                  </div>
+                  <div class="favourite">
+                    <i class="fa-solid fa-heart fa-beat-fade"></i>
+                  </div>
+                </div>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span> 32 Reviews </span>
+                </div>
+                <div class="price-cart">
+                  <div class="item-price">
+                    <h3>Rs. 350</h3>
+                  </div>
+                  <div class="cart">
+                    <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                  </div>
+                </div>
+              </div>
+            </div> <!-- card 1 col-md-3 ends-->
+          <div class="item">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/dal makhani.png" alt="Dal Makhni" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Dal Makhni </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!--card 2 col-md-3 ends-->          
+          <div class="item">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/paneer butter masala.jpg" alt="Paneer Butter Masala" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Paneer Butter Masala </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!--card 3 col-md-3 ends-->          
+          <div class="item">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken biryani.jpg" alt="Chicken Biryani" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Biryani </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!--card 4 col-md-3 ends-->
+          <div class="item">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/kfc Chicken.webp" alt="KFC chicken" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Biryani </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!--card 5 col-md-3 ends-->
+        </div>
+      </div>
+    </section> <!-- special menu ends-->
+    <section class="reserve">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row reserve-bg">
+            <div class="col-md-12 col-lg-4">
+              <div class="reserve-title">
+                <h1>Reserve</h1>
+                <h2>A Table</h2>
+                <p>discover our new menu!</p>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+              <form name="reserve-table" method="post" action="mailto:ankitbc777@gmail.com">
+                <div class="row">
+                  <div class="col-md-6">
+                <div class="mb-3">
+                  <input type="number" class="form-control" placeholder="Number of Guest" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <input type="date" class="form-control" placeholder="2060/04/09" required>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <input type="time" class="form-control" placeholder="Time" required>
+                </div>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Your Phone Number">
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3 reserve-button">
+                <div class="reserve-border"></div>
+                <input type="submit" name="submit" class="btn btn-primary" value="Reserve a Table">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- fast food settings starts -->
+    <section class="fast-food-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wow animate__animated animate__slideInDown">
+            <h1> Fast Food Menu </h1>
+          </div>
+        </div>
+        <div class="row wow animate__animated animate__slideInUp">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-momo.webp" alt="Chicken Mo:Mo" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chilli Chicken Punjabi style by Nepali Chef </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span> 
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 180</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 1 col-md-3 ends-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-noodles.avif" alt="Chicken Noodles" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Noodles </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 150</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 2 col-md-3 ends-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-chilli.jpg" alt="Chilli Chicken" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Chilli </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 3 col-md-3 ends-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/fried-chicken.webp" alt="Chilli Chicken" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Fried Chicken </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 400</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 4 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/ice-cream.webp" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Ice Cream </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 150</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 1 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/pizza.webp" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Pizza </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 300</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 2 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/mutton-sekuwa.png" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Mutton Sekuwa </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 250</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 3 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/burger.png" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Burger </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 190</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 4 col-md-3 ends-->
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="all-items">
+                    <div class="all-items-button">
+                    </div>
+                    <div class="all-items-button-override">
+                      <a href="#">All Items</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Fast Food Menu ends -->
+    <!-- download section starts -->
+    <section class="download">
+      <div class="container-fluid">
+        <!-- <div class="container"> -->
+          <div class="row">
+            <div class="col-md-5">
+                <div class="app-container">
+                <p>Food - whenever and wherever you want</p>
+                <h1>Order Your Favourite Food with App</h1>
+                <ul>
+                  <li>Higher Reach - Minimal Effort</li>
+                  <li>Showcase your Brand</li>
+                  <li>Excellent offers & discounts</li>
+                </ul>
+                <div class="download-button">
+                  <!-- <a href="#">
+                    <img src="images/google-play.png" alt="google-play" class="img-fluid">
+                  </a>
+                  <a href="#">
+                    <img src="images/app-store.png" alt="app-store" class="img-fluid">
+                  </a> -->
+                  <a href="#">
+                    <div class="google-play">
+                      <span class="google-play-icon"><i class="fa-brands fa-google-play"></i></span>
+                      <span class="download-heading">
+                        <h3>Download From</h3>
+                        <h1>Google Play</h1>
+                      </span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="app-store">
+                      <span class="app-store-icon"><i class="fa-brands fa-apple"></i></span>
+                      <span class="download-heading">
+                        <h3>Download From</h3>
+                        <h1>Apple Store</h1>
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-7">
+              <div class="round-bg"></div>
+            </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+     </section> <!--download section ends -->
+    <!-- Special Dining Menu starts -->
+    <section class="special-dining-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wow animate__animated animate__slideInLeft">
+            <h1> Special Dining Menu </h1>
+          </div>
+        </div>
+        <div class="row wow animate__animated animate__slideInRight">
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-momo.webp" alt="Chicken Mo:Mo" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Mo:Mo </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 180</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 1 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-noodles.avif" alt="Chicken Noodles" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Noodles </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 150</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 2 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chicken-chilli.jpg" alt="Chilli Chicken" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chicken Chilli </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 3 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/fried-chicken.webp" alt="Chilli Chicken" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Fried Chicken </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 400</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 4 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/ice-cream.webp" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Ice Cream </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 150</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 1 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/pizza.webp" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Pizza </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 300</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 2 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/mutton-sekuwa.png" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Mutton Sekuwa </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 250</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 3 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/burger.png" alt="Chilli Chicken" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Burger </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 190</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 4 col-md-3 ends-->
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="all-items">
+                    <div class="all-items-button">
+                    </div>
+                    <div class="all-items-button-override">
+                      <a href="#">All Items</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- special dining menu ends-->
+    <!-- Beverage and Drinks Starts -->
+    <section class="beverage-and-drinks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wow animate__animated animate__slideInRight">
+            <h1> Beverage & Drinks </h1>
+          </div>
+        </div>
+        <div class="row wow animate__animated animate__slideInLeft">
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/strawberry-juice.png" alt="strawberry-juice" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Strawberry Juice </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 180</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 1 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/chocolate-milkshake.avif" alt="chocolate-milkshake" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Chocolate Milkshake </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 150</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 2 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/ice-cream.png" alt="ice-cream" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Ice Cream </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 350</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 3 col-md-3 ends-->
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="menu-card">
+              <div class="menu-card-figure">
+                <a href="#">
+                  <img src="images/coffee.jpg" alt="coffee" class="img-fluid" >
+                </a>
+              </div>
+              <div class="menu-card-title">
+                <div class="menu-title">
+                  <h2><a href="#"> Coffee </a></h2>
+                </div>
+                <div class="favourite">
+                  <i class="fa-solid fa-heart fa-beat-fade"></i>
+                </div>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span> 32 Reviews </span>
+              </div>
+              <div class="price-cart">
+                <div class="item-price">
+                  <h3>Rs. 400</h3>
+                </div>
+                <div class="cart">
+                  <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                </div>
+              </div>
+            </div>
+          </div> <!-- card 4 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/Pepsi.png" alt="Pepsi" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Pepsi </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 150</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 1 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/sprite.png" alt="sprite" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Sprite </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 300</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 2 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/coca-cola" alt="coca-cola" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Coca-Cola </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 250</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 3 col-md-3 ends-->
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="menu-card">
+                  <div class="menu-card-figure">
+                    <a href="#">
+                      <img src="images/fanta.png" alt="fanta" class="img-fluid" >
+                    </a>
+                  </div>
+                  <div class="menu-card-title">
+                    <div class="menu-title">
+                      <h2><a href="#"> Fanta </a></h2>
+                    </div>
+                    <div class="favourite">
+                      <i class="fa-solid fa-heart fa-beat-fade"></i>
+                    </div>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span> 32 Reviews </span>
+                  </div>
+                  <div class="price-cart">
+                    <div class="item-price">
+                      <h3>Rs. 190</h3>
+                    </div>
+                    <div class="cart">
+                      <img src="images/cart-icon.png" alt="Cart"> Add to Cart
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row 2 card 4 col-md-3 ends-->
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="all-items">
+                    <div class="all-items-button">
+                    </div>
+                    <div class="all-items-button-override">
+                      <a href="#">All Items</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials wow animate__animated animate__fadeIn">
+      <div class="overlay">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="testimonials-heading">
+                <h3>Sweet Memories</h3>
+                <h1>Our Best Food Lovers</h1>
+            </div>
+            </div>
+            <div class="col-md-7">
+              <div class="owl-carousel testimonial-items owl-theme">
+                <div class="items">
+                  <div class="testimonial-box">
+                    <img src="images/avatar.png" alt="avatar" class="img-fluid">
+                    <h2>Mrs. Punam Singh</h2>
+                    <div class="review-discription">
+                      <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem, soluta non aspernatur nihil explicabo odio facilis quam expedita tenetur accusamus, asperiores commodi deserunt temporibus. Necessitatibus suscipit soluta fugiat ipsa!
+                        </p>
+                    </div>
+                  </div>
+                </div> <!--item ends -->
+                <div class="items">
+                  <div class="testimonial-box">
+                    <img src="images/man-avatar.png" alt="avatar" class="img-fluid">
+                    <h2>Mr. Garib Chand</h2>
+                    <div class="review-discription">
+                      <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem, soluta non aspernatur nihil explicabo odio facilis quam expedita tenetur accusamus, asperiores commodi deserunt temporibus. Necessitatibus suscipit soluta fugiat ipsa!
+                        </p>
+                    </div>
+                  </div>
+                </div> <!--item ends -->
+                <div class="items">
+                  <div class="testimonial-box">
+                    <img src="images/child-avatar.png" alt="avatar" class="img-fluid">
+                    <h2>Mr. Customer</h2>
+                    <div class="review-discription">
+                      <div class="quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem, soluta non aspernatur nihil explicabo odio facilis quam expedita tenetur accusamus, asperiores commodi deserunt temporibus. Necessitatibus suscipit soluta fugiat ipsa!
+                        </p>
+                    </div>
+                  </div>
+                </div> <!--item ends -->
+              </div>
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="all-reviews">
+                    <div class="all-reviews-button"></div>
+                    <div class="all-reviews-button-override">
+                      <a href="#">View All Reviews</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer>
+        <section class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="footer-logo">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+              </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor consequuntur numquam id consequatur laboriosam incidunt nesciunt reprehenderit, magni recusandae!</p>
+              </div>
+              <div class="col-md-3">
+                <div class="about">
+                 <h3><span> About</span></h3>
+                  <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Special Dish</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <h3> <span>Menu</span></h3>
+                <ul>
+                  <li><a href="#">Fast Food</a></li>
+                  <li><a href="#">Fine Dining</a></li>
+                  <li><a href="#">Beverages & Drinks</a></li>
+                  <li><a href="#">Deserts</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h3><span>Newsletter</span></h3>
+                <p>Get recent news and updates.</p>
+                <form method="post" action="mailto:ankitbc777@gmail.com">
+                  <div class="row">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your email address" required>
+                  </div>
+                </div>
+                <div class="mb-3 reserve-button">
+                  <input type="submit" name="submit" class="btn btn-primary" value="Subscribe">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </footer>
+  <section class="copyright">
+    <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Copyright &copy; 2024. All Rights Reserved</p>
+        </div>
+        <div class="col-md-4">
+          <span>Visitors:</span>
+          <span class="numscroller" data-min="0" data-max="123456"
+          data-delay="1000" data-increment="5000">123456</span>
+        </div>
+        <div class="col-md-4 ">
+          <p>Developed By: <a href="https://ankitbudhathoki.com.np/" target="_blank"> Ankit Budhathoki</a> </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="js/numscroller-1.0.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/custom.js" ></script>
+      <script>
+        new WOW().init();
+       </script>
+  </body>
+
+</html>

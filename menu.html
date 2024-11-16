@@ -1,0 +1,545 @@
+git <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="images/shortcut-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="contact-header">
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i> <a href="tel:9779800000000">+977-9800000000</a>
+                            </div>
+                            <div class="email">
+                                <i class="fa-solid fa-envelope"></i> <a
+                                    href="mailto:ankitbc777@gmail.com">ankitbc777@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-end">
+                        <div class="login-header">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="login.html">Login</a> |
+                            <a href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a href="index.html" class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="images/mobile-menu-logo.png" alt="mobile-menu-logo">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button> Book a Table </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="menu-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="our-menu text-center">
+                        <h1>Our Menu</h1>
+                    </div>
+                    <div class="tab-bar">
+                        <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Food</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Snacks</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Local recipie</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-disabled" type="button" role="tab"
+                                    aria-controls="pills-disabled" aria-selected="false">Drinks</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <h1 class="test text-center" >testing</h1>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="box">
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Plain Rice</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/plain-rice-copy.jpg" alt="Plain Rice" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Veg Fried Rice</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/veg-fried-rice.jpg" alt="Veg Fried Rice" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Paneer Pulao</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/paneer-pulao.jpg" alt="Paneer Pulao" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                            
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="box">
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Non-Veg Rice</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/chicken-rice.jpg" alt="Chicke Rice" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Chicken Fried Rice</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/chicken-fried-rice.jpg" alt="Chicken Fried Rice" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Chicken Briyani</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Foods/chicken-briyani.jpg" alt="Sadha Khana" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="col-md-12">
+                        <div class="row">
+                            <div class="col">
+                                <div class="box">
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Chowmein</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Snacks/Chowmein.jpg" alt="Chowmein" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Mo:Mo</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Snacks/momo.jpg" alt="momo" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Spring Roll</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Snacks/spring-roll-7.jpg" alt="Spring Roll" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="box">
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Sekuwa</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/sadha_khana.jpg" alt="Sekuwa" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Chicken Chilli</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Snacks/chicken-chilli-6.jpg" alt="Chicken Chilli" class="img-fluid">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="box-content">
+                                            <h2>Chicken Briyani</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                                                quibusdam impedit vero, libero natus aperiam ex .</p>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/menu-items/Snacks/biryani.jpg" alt="Chicken Briyani" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/sadha_khana.jpg" alt="Sadha Khana" class="img-fluid">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+            tabindex="0">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col">
+                        <div class="box">
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Lassi</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/Lassi.jpg" alt="lassi" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Tea</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/tea.jpg" alt="Tea" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Orange Juice</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/orange-juice.jpg" alt="Orange Juice" class="img-fluid">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="box">
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/coffee.jpg" alt="Coffee" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Sadha Khana</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/lemon-juice.jpg" alt="Lemon Juice" class="img-fluid">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="box-content">
+                                    <h2>Beer</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam
+                                        impedit vero, libero natus aperiam ex .</p>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/menu-items/Drinks/beer.jpg" alt="Beer" class="img-fluid">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <section class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-logo">
+                            <img src="images/logo.png" alt="logo" class="img-fluid">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor consequuntur numquam id
+                            consequatur laboriosam incidunt nesciunt reprehenderit, magni recusandae!</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="about">
+                            <h3><span> About</span></h3>
+                            <ul>
+
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Special Dish</a></li>
+                                <li><a href="#">Reservation</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3> <span>Menu</span></h3>
+                        <ul>
+                            <li><a href="#">Fast Food</a></li>
+                            <li><a href="#">Fine Dining</a></li>
+                            <li><a href="#">Beverages & Drinks</a></li>
+                            <li><a href="#">Deserts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3><span>Newsletter</span></h3>
+                        <p>Get recent news and updates.</p>
+                        <form method="post" action="mailto:ankitbc777@gmail.com">
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your email address" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 reserve-button">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">Hellow</div>
+            <div class="col-md-6">World</div>
+        </div>
+    </div>
+    <section class="copyright">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Copyright &copy; 2024. All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span>Visitors:</span>
+                        <span class="numscroller" data-min="0" data-max="123456"
+                        data-delay="1000" data-increment="5000">123456</span>
+                      </div>
+                    <div class="col-md-4 ">
+                        <p>Developed By: <a href="https://ankitbudhathoki.com.np/" target="_blank"> Ankit Budhathoki</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="js/numscroller-1.0.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

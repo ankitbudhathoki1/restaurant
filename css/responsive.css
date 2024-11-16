@@ -1,0 +1,159 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1180px) {
+    section.slider img{
+        height: 400px;
+    }
+    section.reserve h1, 
+    section.reserve h2
+    {
+      font-size: 55px;
+    }
+    section.reserve p {
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1024px) { 
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        top: 170px;
+    }
+ }
+ @media(min-width:992px){
+    section.fast-food-menu .menu-card .menu-card-title .menu-title h2{
+      width: 260px;
+    }
+ }
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .owl-theme .owl-nav{
+        display: none;
+      }
+      .owl-theme .owl-dots {
+        margin-top: -22px;
+      }
+      section.todays-special-menu {
+        margin-top: 20px;
+      }
+      section.testimonials .testimonials-heading h1 {
+        font-size: 45px;
+        padding-right: 0;
+      }
+      section.download .app-container{
+        margin: 0;
+      }
+      section.login-page .login-form-wrapper {
+        margin: 0;
+      }
+    }
+    
+    /* // Medium devices (tablets, 768px and up) */
+    
+    @media (max-width: 768px) { 
+      header{
+        text-align: center; 
+        /*  */
+    }
+    header .login-header{
+        text-align: center;
+        /*  */
+    }
+    section.slider img {
+      height: 330px;
+    }
+    .owl-carousel .owl-nav{
+      display: none;
+    }
+    
+    section.gallery-page img {
+      width: 50%;
+    }
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) {
+  section.gallery-page h1 {
+    font-size: 40px;
+  }
+  header .contact-header a, header .login-header a {
+    font-size: 15px;
+  }
+}
+
+@media(max-width:428px){
+  section.slider img{
+    height: 170px;
+  }
+  section.testimonials .testimonials-heading {
+    height: 200px;
+  }
+  /* section.testimonials .testimonials-heading h1 {
+    font-size: 44px;
+  } */
+
+}
+@media (max-width: 390px){
+    header .contact-header{
+        text-align: left;
+    }
+    header .login-header{
+        text-align: left !important;
+    }
+    header .contact-header .phone{
+        float: none;
+    }
+    header i{
+        background-color: #D52D1E;
+        padding: 0;
+        border-radius: 50%;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 20px !important;
+    }
+    nav.navbar .navbar-brand img {
+      width: 75%;
+    }
+    nav.navbar .navbar-toggler .navbar-toggler-icon {
+      font-size: 18px;
+    }
+    section.slider img{
+      height: 150px;
+    }
+    .owl-carousel .owl-nav{
+        display: none;
+    }
+    section.reserve h1,
+    section.reserve h2 {
+        font-size: 40px;
+    }
+    section.reserve p {
+        font-size: 13px;
+    }
+
+    /* .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev{
+        top: 59px;
+        height: 30px;
+        width: 30px;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0px;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 5px;
+    }
+    .owl-carousel .owl-nav button.owl-next span,
+    .owl-carousel .owl-nav button.owl-prev span{
+        font-size: 20px;
+        line-height: 20px;
+    } */
+}
