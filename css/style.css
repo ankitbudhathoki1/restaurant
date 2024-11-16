@@ -969,22 +969,47 @@ section.login-page .overlay {
     background-color: rgb(0, 0, 0, 0.7);
     padding: 205px 0;
   }
-  section.login-page  .login-form-wrapper {
+  section.login-page  .login-wrapper {
     background: white;
     padding: 30px;
     margin: 0 35px;
     border-radius: 20px;
+    position: relative;
   }
-  section.login-page  .form-label {
+  section.login-page .form-label {
     margin: 0;
   }
+  section.login-page .login-wrapper ul.nav {
+    justify-content: center;
+    margin: 50px 0px !important;
+    position: relative;
+}
+section.login-page .login-wrapper button.nav-link{
+    color: #000;
+    font: 17px;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+}
+  section.login-page .login-wrapper button.nav-link.active {
+    background: #d52d1e;
+    font-size: 19px;
+    font-weight: 600;
+    height: 40px;
+    width: 170px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+  }
   section.login-page .member-login-heading h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-align: center;
     padding: 0 0 30px 0;
     margin: 0;
     color: #D52D1E;
+    margin: -145px 0 65px 0;
   }
   section.login-page .login-form-wrapper input[type="text"],
   section.login-page .login-form-wrapper input[type="password"]{
