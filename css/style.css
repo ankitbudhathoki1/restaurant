@@ -1170,7 +1170,9 @@ section.login-page .member-login-heading h1 {
 }
 
 section.login-page .login-form-wrapper input[type="text"],
-section.login-page .login-form-wrapper input[type="password"] {
+section.login-page .login-form-wrapper input[type="password"],
+section.login-page .login-form-wrapper input[type="number"],
+section.login-page .login-form-wrapper input[type="email"]{
     padding: 10px 10px;
     margin: 5px 0;
     border-radius: 20px;
