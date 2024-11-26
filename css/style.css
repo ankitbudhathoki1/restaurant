@@ -62,6 +62,7 @@ nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button{
     padding: 4px 5px;
     border-radius: 5px;
     transition: 0.5s;
+    font-weight: 600;
 }
 
 nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button:hover {
@@ -72,6 +73,48 @@ nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button:hover {
 .navbar-toggler {
     border: 0;
 }
+/* setting for navbar booking button starts */
+.modal-content {
+    background: url(../images/red-bg.jpg);
+    position: relative;
+  }
+  section.booking-modal .modal-header h1 {
+    border-bottom: 2px solid yellow;
+  font-size: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  }
+
+  section.booking-modal .modal-body {
+    padding: 30px 20px;
+  }
+  section.booking-modal .modal-body  label.form-label {
+    margin-bottom: 1px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  section.booking-modal .modal-body .table-reserve-btn .table-reserve-btn-border {
+    padding: 23px;
+    width: 135px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+  }
+  section.booking-modal .modal-body .table-reserve-btn{
+    position: relative;
+  }
+  section.booking-modal .modal-body .table-reserve-btn  .btn.btn-warning {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px 10px;
+    font-weight: 600;
+    background: yellow;
+    border: none;
+  }
+/* setting for navbar booking button ends */
 
 /* setting for slider */
 .owl-carousel .owl-nav button.owl-next,
