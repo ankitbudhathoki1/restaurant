@@ -1105,7 +1105,7 @@ section.menu-page .tab-content img:hover {
 /* settings for login page */
 section.login-page {
     background: url(../images/background.jpg);
-    height: 800px;
+    padding: 100px 0;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -1118,7 +1118,8 @@ section.login-page {
 
 section.login-page .overlay {
     background-color: rgb(0, 0, 0, 0.7);
-    padding: 205px 0;
+    margin: -100px 0;
+    padding: 150px;
 }
 
 section.login-page .login-wrapper {
