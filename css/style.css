@@ -54,17 +54,17 @@ nav {
     background-color: #f7f7f7;
 }
 
-nav button {
+nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button{
     background-color: #D52D1E;
     color: #fff;
     margin-top: 3px;
-    border: 0;
+    border: 1px solid red;
     padding: 4px 5px;
     border-radius: 5px;
     transition: 0.5s;
 }
 
-nav button:hover {
+nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button:hover {
     background-color: #fca403;
     border: 1px solid red;
 }
@@ -1217,3 +1217,14 @@ section.login-page .login-form-wrapper input[type="submit"] {
 section.login-page .login-form-wrapper .not-a-member p {
     margin: 0;
 }
+  /* Hide the spin buttons in WebKit browsers */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  /* Hide spin buttons in Firefox */
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
