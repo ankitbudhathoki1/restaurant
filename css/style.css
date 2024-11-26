@@ -74,7 +74,7 @@ nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button:hover {
     border: 0;
 }
 /* setting for navbar booking button starts */
-.modal-content {
+section.booking-modal .modal-content {
     background: url(../images/red-bg.jpg);
     position: relative;
   }

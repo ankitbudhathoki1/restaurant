@@ -2,8 +2,8 @@ $('.main-slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    autoplay:false,
-    autoplayTimeout:2500,
+    autoplay:true,
+    autoplayTimeout:3500,
     responsive:{
         0:{
             items:1
@@ -21,7 +21,7 @@ $('.special-menu-slider').owlCarousel({
     margin:10,
     nav:false,
     autoplay:true,
-    autoplayTimeout:2500,
+    autoplayTimeout:4000,
     responsive:{
         0:{
             items:1
@@ -41,8 +41,8 @@ $('.testimonial-items').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
-    autoplay:false,
-    autoplayTimeout:2500,
+    autoplay:true,
+    autoplayTimeout:4000,
     responsive:{
         0:{
             items:1
@@ -61,5 +61,5 @@ $('.testimonial-items').owlCarousel({
 
 // settings for notice modal
 $('document').ready(function(){
-$('#notice').modal('hide')
+$('#notice').modal('show')
 })
