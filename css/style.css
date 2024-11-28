@@ -58,7 +58,7 @@ nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button{
     background-color: #D52D1E;
     color: #fff;
     margin-top: 3px;
-    border: 1px solid red;
+    border: 1px solid #D52D1E;
     padding: 4px 5px;
     border-radius: 5px;
     transition: 0.5s;
@@ -67,7 +67,7 @@ nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button{
 
 nav.navbar .offcanvas-body ul.navbar-nav li.nav-item button:hover {
     background-color: #fca403;
-    border: 1px solid red;
+    border: 1px solid #D52D1E;
 }
 
 .navbar-toggler {
@@ -1260,6 +1260,13 @@ section.login-page .login-form-wrapper input[type="submit"] {
 section.login-page .login-form-wrapper .not-a-member p {
     margin: 0;
 }
+section.login-page .login-form-wrapper .not-a-member p a {
+    color: #D52D1E;
+}
+section.login-page .login-form-wrapper .not-a-member p a:hover {
+    text-decoration: underline;
+}
+
   /* Hide the spin buttons in WebKit browsers */
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {

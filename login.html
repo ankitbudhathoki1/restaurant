@@ -20,6 +20,62 @@
 </head>
 
 <body>
+  <section class="booking-modal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">
+  Launch static backdrop modal
+</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="booking" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="staticBackdropLabel">Reserve A Table</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="mailto:ankitbc777@gmail.com" method="post" name="signup-form">
+              <div class="mb-3">
+                <label for="fullname" class="form-label">Full name*</label>
+                <input type="text" name="fullname" class="form-control" placeholder="Enter your full name" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number*</label>
+                <input name="phone" type="tel" class="form-control" placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="total-guest" class="form-label">Number of Guest</label>
+                <input type="number" name="total-guest" class="form-control" placeholder="Enter total guest" required>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" name="date" class="form-control" placeholder="Date" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="time" name="time" class="form-control" placeholder="Date" required>
+                  </div>
+                </div>
+              </div>
+              <div class="table-reserve-btn">
+                <div class="mb-3">
+                  <div class="table-reserve-btn-border"></div>
+                  <input type="submit" name="submit" class="btn btn-warning" value="Reserve A Table">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- booking modal ends -->
+   
   <header>
     <div class="container-fluid">
       <div class="container">
@@ -156,7 +212,7 @@
                       </div>
                       <div class="mb-3">
                         <label for="phone" class="form-label">Phone Number*</label>
-                        <input name="phone" type="number" class="form-control" placeholder="Enter your phone number"
+                        <input name="phone" type="number" maxlength="5" class="form-control" placeholder="Enter your phone number"
                           required>
                       </div>
                       <div class="mb-1">
