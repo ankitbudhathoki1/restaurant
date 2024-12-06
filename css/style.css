@@ -1166,7 +1166,7 @@ section.login-page .overlay {
 }
 
 section.login-page .login-wrapper {
-    background: white;
+    background: #f7f7f7;
     padding: 30px;
     margin: 0 35px;
     border-radius: 20px;
