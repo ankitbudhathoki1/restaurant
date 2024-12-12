@@ -1109,8 +1109,8 @@ section.menu-page .nav.nav-pills {
 
 section.menu-page .tab-content .box {
     background: #faeed2;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 0;
 }
 
 section.menu-page .tab-content .box a {
