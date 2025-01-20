@@ -1172,7 +1172,14 @@ section.login-page .login-wrapper {
     border-radius: 20px;
     position: relative;
 }
-
+section.login-page .pw{
+    position: relative;
+}
+section.login-page .pw i {
+    position: absolute;
+    top: 44px;
+    right: 15px;
+  }
 section.login-page .form-label {
     margin: 0;
 }

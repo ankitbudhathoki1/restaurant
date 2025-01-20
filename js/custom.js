@@ -63,3 +63,19 @@ $('.testimonial-items').owlCarousel({
 $('document').ready(function(){
 $('#notice').modal('show')
 })
+
+
+
+// password show hide
+let eye = document.getElementById("eye");
+let password = document.getElementById("password");
+
+eye.onclick = function() {
+    if(password.type == "password"){
+        password.type = "text";
+        eye.setAttribute("class", "fa-solid fa-eye")
+    } else{
+        password.type = "password";
+        eye.setAttribute("class", "fa-solid fa-eye-slash")
+    }
+}
